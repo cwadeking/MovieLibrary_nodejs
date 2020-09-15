@@ -1,0 +1,30 @@
+{
+  "name": "movielibrary",
+  "version": "1.0.0",
+  "description": "AllOfTheMovies",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "noTest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwadeking/MovieLibrary_nodejs.git"
+  },
+  "keywords": [
+    "movie",
+    "library",
+    "search",
+    "find"
+  ],
+  "author": "CWKing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwadeking/MovieLibrary_nodejs/issues"
+  },
+  "homepage": "https://github.com/cwadeking/MovieLibrary_nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
