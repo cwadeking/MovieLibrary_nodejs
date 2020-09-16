@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
    });
 
 app.get("/api/movies", (req, res) => {
-    let movies = repoContext.movies.findAllmovies();
+    let movies = repoContext.movies.findAllMovies();
     res.send(movies);
 });
 
