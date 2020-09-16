@@ -28,5 +28,11 @@
     "title": "Die Hard",
     "director": "John McTiernan",
     "genre": "Action"
+  },
+  {
+    "id": 6,
+    "title": "Don't Tell Mom, The Babysitter's Dead",
+    "director": "Christina Applegate",
+    "genre": "Comedy"
   }
 ]
