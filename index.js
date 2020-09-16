@@ -2,7 +2,41 @@ const repoContext = require("./repository/repository-wrapper.js");
 const express = require('express');
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 
+app.get("/", (req, res) => {
+    res.send("hello");
+   });
+
+app.get("/api/movies", (req, res) => {
+    let movies = repoContext.movies.findAllmovies();
+    res.send(movies);
+});
+
+app.get("/api/movies/:id", (req, res) => {
+    let id = req.params.id;
+    let movie = repoContext.movies.findMovieById(id);
+    res.send(movie);
+});
+
+app.post("/api/movies", (req, res) => {
+    let newMovie =  req.body;
+    let addedMovie = repoContext.movies.createMovie(newMovie);
+    res.send(addedMovie);
+});
+
+app.put("/api/movies", (req, res) => {
+    let movieToUpdate = req.body;
+    let updatedMovie = repoContext.movies.updateMovie(movieToUpdate);
+    res.send(updatedMovie);
+});
+
+app.delete("/api/products/:id", (req, res) => {
+    let id = req.params.id;
+    let updatedDataSet = repoContext.movies.deleteMovie(id);
+    res.send(updatedDataSet);
+});
 
 
 app.listen(3000, function (){
