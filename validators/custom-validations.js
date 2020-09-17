@@ -4,7 +4,7 @@ function isNotEmptyAndIsString(value){
     return !isNullOrUndefined(value) && isString(value);
 }
 
-function isNotEmptyAnIsNumber(value) {
+function isNotEmptyAndIsNumber(value) {
     return !isNullOrUndefined(value) && isNumber(value);
 }
 
