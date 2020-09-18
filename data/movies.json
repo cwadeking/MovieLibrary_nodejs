@@ -9,23 +9,23 @@
   {
     "id": 2,
     "title": "The Dark Knight",
-    "director": "Drama",
-    "genre": "Christopher Nolan",
-    "image": "images/movie_images/2006-departed-9.jpg"
+    "director": "Christopher Nolan",
+    "genre": "Drama",
+    "image": "images/movie_images/2008-dark_knight-2.jpg"
   },
   {
     "id": 3,
     "title": "Inception",
     "director": "Christopher Nolan",
     "genre": "Drama",
-    "image": "images/movie_images/2006-departed-9.jpg"
+    "image": "images/movie_images/inception-imax-poster1.jpg"
   },
   {
     "id": 4,
     "title": "Pineapple Express",
     "director": "David Gordon Green",
     "genre": "Comedy",
-    "image": "images/movie_images/2006-departed-9.jpg"
+    "image": "images/movie_images/2008-pineapple_express-2.jpg"
   },
   {
     "id": 5,
@@ -33,7 +33,14 @@
     "director": "John McTiernan",
     "genre": "Action",
     "image": "images/movie_images/1988-die-hard-poster2.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Test with no image",
+    "director": "Christina Applegate",
+    "genre": "Comedy",
+    "image": "images/movie_images/2008-dark_knight-2.jpg"
 
+              
   }
-  
 ]

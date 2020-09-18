@@ -17,12 +17,12 @@ function createCardTable(){
                                             <div class="flip-card">
                                                 <div class="flip-card-inner">
                                                     <div class="flip-card-front">
-                                                        <img src="${data[i].image}" alt="Avatar" style="width:300px;height:300px;">
+                                                        <img src="${data[i].image}" alt="Avatar" style="width:100%;height:100%;">
                                                     </div>
                                                     <div class="flip-card-back">
                                                         <h1>${data[i].title}</h1>
-                                                        <p>${data[i].director}</p> 
-                                                        <p>${data[i].genre}</p>
+                                                        <p id = "director">${data[i].director}</p> 
+                                                        <p id = "genre">${data[i].genre}</p>
                                                     </div>
                                                 </div>
                                              </div>
