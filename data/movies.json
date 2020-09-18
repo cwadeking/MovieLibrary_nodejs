@@ -3,48 +3,37 @@
     "id": 1,
     "title": "The Departed",
     "director": "Martin Scorsese",
-    "genre": "Drama"
+    "genre": "Drama",
+    "image": "images/movie_images/2006-departed-9.jpg"
   },
   {
     "id": 2,
     "title": "The Dark Knight",
     "director": "Drama",
-    "genre": "Christopher Nolan"
+    "genre": "Christopher Nolan",
+    "image": "images/movie_images/2006-departed-9.jpg"
   },
   {
     "id": 3,
     "title": "Inception",
     "director": "Christopher Nolan",
-    "genre": "Drama"
+    "genre": "Drama",
+    "image": "images/movie_images/2006-departed-9.jpg"
   },
   {
     "id": 4,
     "title": "Pineapple Express",
     "director": "David Gordon Green",
-    "genre": "Comedy"
+    "genre": "Comedy",
+    "image": "images/movie_images/2006-departed-9.jpg"
   },
   {
     "id": 5,
     "title": "Die Hard",
     "director": "John McTiernan",
-    "genre": "Action"
-  },
-  {
-    "id": 6,
-    "title": "Don't Tell Mom, The Babysitter's Dead",
-    "director": "Christina Applegate",
-    "genre": "Comedy"
-  },
-  {
-    "id": 7,
-    "title": "Don't Tell Mom, The Babysitter's Dead",
-    "director": "Christina Applegate",
-    "genre": "Drama"
-  },
-  {
-    "id": 8,
-    "title": "Don't Tell Mom, The Babysitter's Dead",
-    "director": "Christina Applegate",
-    "genre": "Comedy"
+    "genre": "Action",
+    "image": "images/movie_images/1988-die-hard-poster2.jpg"
+
   }
+  
 ]

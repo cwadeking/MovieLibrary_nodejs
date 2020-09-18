@@ -6,23 +6,28 @@ function createCardTable(){
         dataType: "json",
         type: "get",
         success: function(data, textStatus, jQxhr){
-
             for(let i = 0; i < data.length; i++){
-                $("#cardTable").append(`<div class = "container">
-                                            <div class = "card>
-                                                <tr>
-                                                    <td>${data[i].title}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>${data[i].director}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>${data[i].genre}</td>
-                                                </tr>
-                                            </div>
-                                            <div class = "internalCard>
-                                            </div>
-                                        </div>   `)
+                let side = "right";
+                    
+                if(i % 2 == 0 || i == 0){
+                    side = "left";
+                }
+                    $(`.col-${side}`).append(`
+                                        
+                                            <div class="flip-card">
+                                                <div class="flip-card-inner">
+                                                    <div class="flip-card-front">
+                                                        <img src="${data[i].image}" alt="Avatar" style="width:300px;height:300px;">
+                                                    </div>
+                                                    <div class="flip-card-back">
+                                                        <h1>${data[i].title}</h1>
+                                                        <p>${data[i].director}</p> 
+                                                        <p>${data[i].genre}</p>
+                                                    </div>
+                                                </div>
+                                             </div>
+                                       
+                                        ` )
             }
         },
         error: function(jQxhr, testStatus, errorThrown){
