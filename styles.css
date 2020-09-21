@@ -1,3 +1,54 @@
+
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-color: #101010f5;
+  padding: 20px 10px;
+}
+.inner_header{
+  width: 1000px;
+  height: 100%;
+  display: block;
+  background-color: auto;
+}
+.logo_container{
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Helvetica';
+  font-size: 32px;
+  font-weight: 200;
+}
+.logo_container h1 span{
+  font-weight: 1000;
+}
+
+.header-right {
+  float: right;
+  vertical-align: middle;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  width: 1000px;
+  height: 100%;
+  display: block;
+  background-color: auto;
+
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -45,4 +96,5 @@ body {
 .col{
     column-count: 2;
 }
+
 
