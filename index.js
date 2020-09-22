@@ -1,3 +1,5 @@
+"use strict";
+
 var cors = require("cors");
 const repoContext = require("./repository/repository-wrapper.js");
 const validators = require("./validators/custom-validations.js");

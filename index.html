@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -15,20 +14,19 @@
 
         <div class="header">
             <div class="header-right">
-                <button type="button" onclick="findMovieById()">Search!</button>
-                <button type="button" onclick="createMovie()">Add Movie</button>
-                <button type="button" onclick="updateMovie()">Update Movie</button>
 
+                <button type="button" onclick="showInput()">Add Movie</button>
+                <button type="button" onclick="update()">Update Movie</button>
+                <button type="button" onclick="createCardTable()">List All</button>
 
-          </div>
+            </div>
             <div class="inner_header">
             <div class="logo_container">
                 <h1>Terbium<span>Movies</span></h1>
                         </div>
             </div>
         </div>
-
-        <div class="container-fluid">
+        <div id="columns" class="container-fluid">
             <div class = "col">
                 <center>
                     <div class="col-left">
@@ -41,6 +39,20 @@
                     </div>
                 </center>
             </div>
+        </div>
+    
+        <div id="userInput" class="hidden"> 
+            <form id="form1" action="/action_page.php">
+                <label for="Title">Title</label>
+                <input type="text" id="Title" name="Title"><br><br>
+                <label for="Director">Director</label>
+                <input type="text" id="Director" name="Director"><br><br>
+                <label for="Genre">Genre</label>
+                <input type="text" id="Genre" name="Genre"><br><br>
+                <input type="submit" value="Submit">
+              </form>
+            
+
         </div>
 
         <script src ="app.js" type = "text/javascript"></script>
